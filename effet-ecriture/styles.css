@@ -1,0 +1,86 @@
+/*
+    https://uigradients.com
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: #7474bf; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7474bf, rgb(123, 214, 123)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bf7474, #34c759); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100%;
+    width: 100%;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container h1 {
+    font-family: Roboto;
+    font-size: 96px;
+    font-weight: 900;
+    cursor: pointer; /* spécifie le type de curseur */
+    text-shadow: 5px 5px 15px black; /* ajoute de l'ombre au texte */
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 0.250s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.250s ease-in;
+}
+
+.btn {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    right: 50%;
+
+    background-color: rgba(255,255,255,0.35);
+    border: none;
+    outline: none;
+    color: #1c1c1c;
+    height: 48px;
+    width: 150px;
+    margin-left: -75px;
+
+    font-size: 16px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all 0.250s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgba(255,255,255,0.75);
+    color:black;
+}
